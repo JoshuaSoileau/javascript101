@@ -52,9 +52,9 @@ section.index_content { width: 950px; margin: 0 auto;   min-height: 100%; height
 header.index_header { width: 100%; background: #eee url("../images/header_background.png"); height: 90px;  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); box-shadow: 0 1px 3px rgba(0,0,0,0.5); }
 div.index_header_wrapper { width: 950px; margin: 0 auto; text-align: center; }
 img.index_logo { margin-top: 5px; }
-ul.header_left_nav { width: 475px; position: absolute; }
+ul.header_left_nav { width: 475px; position: absolute; margin-left: 160px; text-align: right;}
 ul.header_right_nav { width: 475px; position: absolute; margin-left: 475px; padding-left: 125px; } 
-ul.header_left_nav li { padding-bottom: 5px; cursor: pointer; float: left; text-align: left; margin-top: 45px; margin-right: 75px; font-family: LatoBold; text-transform: uppercase; font-size: 10.5pt; color: #777; }
+ul.header_left_nav li { padding-bottom: 5px; cursor: pointer; float: left; text-align: left; margin-top: 45px; margin-right: 37px; font-family: LatoBold; text-transform: uppercase; font-size: 10.5pt; color: #777; }
 ul.header_right_nav li { padding-bottom: 5px; cursor: pointer; margin-top: 45px; font-family: LatoBold; text-transform: uppercase; font-size: 10.5pt; color: #777; float: left; text-align: left; margin-right: 37px; }
 ul.header_left_nav li a { transition: all 0.15s linear; -o-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -webkit-transition: all 0.15s linear; color: #777;}
 ul.header_right_nav li a { transition: all 0.15s linear; -o-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -webkit-transition: all 0.15s linear; color: #777;}
@@ -63,7 +63,7 @@ ul.header_left_nav li:hover { border-bottom: solid 5px #ccc; }
 ul.header_right_nav li:hover { border-bottom: solid 5px #ccc; }
 ul.header_right_nav li:hover a { transition: all 0.15s ease; -o-transition: all 0.15s ease; -moz-transition: all 0.15s ease; -webkit-transition: all 0.15s ease; color: #111; }
 div.index_content { width: 100%; min-height: 900px; margin-top: 100px; background-color: #fff; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); box-shadow: 0 1px 3px rgba(0,0,0,0.5); } 
-h2.course_title { margin-top: 100px; width: 100%; text-align: center; font-family: LatoItalic; font-size: 50px; text-shadow: 1px 1px 1px #fff; }
+h2.course_title { margin-top: 80px; width: 100%; text-align: center; font-family: LatoItalic; font-size: 50px; text-shadow: 1px 1px 1px #fff; }
 ul.folder_list { width: 950px; margin: 0 auto; padding-top: 100px; }
 ul.folder_list li { transition: all 0.15s linear; -o-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -webkit-transition: all 0.15s linear; cursor: pointer; width: 100px; height: 100px; float: left; margin-right: 70px; margin-left: 70px; border-radius: 50px; background-color: #777; text-align: center; }
 ul.folder_list li:hover { transition: all 0.15s ease; -o-transition: all 0.15s ease; -moz-transition: all 0.15s ease; -webkit-transition: all 0.15s ease; background-color: #ccc; }
@@ -72,14 +72,28 @@ ul.folder_list li.last_bubble { margin-right: 0px; }
 ul.folder_list li span { transition: all 0.15s linear; -o-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -webkit-transition: all 0.15s linear; color: #fff; font-family: 'Lato'; font-size: 14px; display: inline-block; margin-top: 42px; }
 li.active_link { border-bottom: solid 5px #ccc; }
 li.active_link a { color: #111 !important; }
-div.index_left_content { float: left; background-color: #fff; width: 48%; min-height: 350px; margin: 65px 0 0 2px; text-align: center; padding-bottom: 10px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); box-shadow: 0 1px 3px rgba(0,0,0,0.5); }
-div.index_right_content { float: right; background-color: #fff; width: 48%; min-height: 350px; margin: 65px 2px 0 0; text-align: center; padding-bottom: 10px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); box-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+div.index_left_content { float: left; background-color: #fff; width: 48%; min-height: 440px; margin: 45px 0 0 2px; text-align: center; padding-bottom: 10px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); box-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+div.index_right_content { float: right; background-color: #fff; width: 48%; min-height: 440px; margin: 45px 2px 0 0; text-align: center; padding-bottom: 10px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); box-shadow: 0 1px 3px rgba(0,0,0,0.5); }
 div.index_bottom_content { float:left; background-color: #fff; width: 946px; min-height: 300px; margin: 35px 0 75px 2px; text-align: center; padding-bottom: 10px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); box-shadow: 0 1px 3px rgba(0,0,0,0.5); }
 p.content_text { text-align: justify; font-family: "Lato","Arial Black","Arial Bold",sans-serif; width: 85%; margin: 0 auto 20px auto; font-size: 12pt; line-height: 1.4em; color: #777; margin-top: 15px; }
 a.read_more { transition: all 0.15s linear; -o-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -webkit-transition: all 0.15s linear; padding-left: 15px; position: relative; width: 100%; text-align: center; font-family: Lato; font-size: 14px; color: #00afdc; }
 a.read_more:hover { transition: all 0.15s ease; -o-transition: all 0.15s ease; -moz-transition: all 0.15s ease; -webkit-transition: all 0.15s ease; color: #555; }
 h2.content_title { margin: 25px 0 20px 0; font-family: LatoBold; font-size: 18pt; font-weight: 900; }
 strong { font-weight: bold; }
+
+section.index_content div.index_right_content  img.instructor_thumb {float: left; padding-left: 15px; padding-top: 10px; padding-right: 5px; } 
+div.instructor_pullout {float: left; margin-left: 20px; text-align: left; width: 250px; display: inline-block;}
+div.instructor_pullout p {margin-top: 10px;} /* padding top: 20px , margin-left: 15px; */
+div.instructor_pullout h3 {font-size: 15px; font-weight: bold; padding-left: 14px; }
+p.context_text strong {font-weight: bold; }
+div.non_instructor {float: right; text-align: left; display: inline-block;}
+div.instructor_bio { float: left; margin-top: 15px; width: 250px; text-align: left; word-wrap: break-word; padding-left: 32px; display: inline-block; } 
+ul.bottom_list {float:left; text-align: left; padding-left: 70px; font-family: "Lato","Arial Black","Arial Bold",sans-serif; width: 85%; margin: 0 auto 20px auto; font-size: 12pt; line-height: 1.4em; color: #777;}
+li.bottom_list_2 {list-style: circle; margin-left: 40px; margin-bottom: 20px;}
+li.bottom_list_1 {list-style: disc;}
+i {font-style: italic;}
+
+div.left_index_content{margin: 0px auto;}
 
 /* screencasts */
 
@@ -100,4 +114,3 @@ div.assignment_text { display: none; font-family: Lato; width: 95%; margin: 0 au
 p.assignment_box_details { margin-bottom: 15px; }
 div.active_assignment { display: block; }
 li.active_assignment_link { color: #999 !important; }
-
