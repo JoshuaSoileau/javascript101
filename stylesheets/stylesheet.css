@@ -79,7 +79,7 @@ p.content_text { text-align: justify; font-family: "Lato","Arial Black","Arial B
 a.read_more { transition: all 0.15s linear; -o-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -webkit-transition: all 0.15s linear; padding-left: 15px; position: relative; width: 100%; text-align: center; font-family: Lato; font-size: 14px; color: #00afdc; }
 a.read_more:hover { transition: all 0.15s ease; -o-transition: all 0.15s ease; -moz-transition: all 0.15s ease; -webkit-transition: all 0.15s ease; color: #555; }
 h2.content_title { margin: 25px 0 20px 0; font-family: LatoBold; font-size: 18pt; font-weight: 900; }
-strong { font-weight: bold; }
+strong { font-weight: bold; font-size: 1.4em; text-align: center; font-family: LatoItalic; padding-top: 10px; color: #444; font-size: 50px; text-shadow: 1px 1px 1px #fff;}
 
 section.index_content div.index_right_content  img.instructor_thumb {float: left; padding-left: 15px; padding-top: 10px; padding-right: 5px; } 
 div.instructor_pullout {float: left; margin-left: 20px; text-align: left; width: 250px; display: inline-block;}
@@ -107,10 +107,66 @@ li.active_video { color: #999; }
 /* assignments */
 
 ul.assignments { margin-top: 40px; width: 200px; float: left; font-size: 20px; font-family: Lato; }
-div.assignment_content { margin-top: 55px; width: 675px; float: right; background-color: #fff; min-height: 75px; padding: 15px 15px 5px 15px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); box-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+div.assignment_content { margin-top: 55px; width: 675px; float: right; background-color: #fff; min-height: 75px; padding: 25px 15px 5px 15px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); box-shadow: 0 1px 3px rgba(0,0,0,0.5); }
 li.assignment { transition: all 0.15s linear; -o-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -webkit-transition: all 0.15s linear; cursor: pointer; margin-top: 15px; }
 li.assignment:hover { transition: all 0.15s ease; -o-transition: all 0.15s ease; -moz-transition: all 0.15s ease; -webkit-transition: all 0.15s ease; color: #999; }
 div.assignment_text { display: none; font-family: Lato; width: 95%; margin: 0 auto 0px auto; font-size: 12pt; line-height: 1.4em; color: #777; }
 p.assignment_box_details { margin-bottom: 15px; }
 div.active_assignment { display: block; }
 li.active_assignment_link { color: #999 !important; }
+
+/* JS 101 Specific */
+pre,
+code  {
+  font-family: consolas, courier, monospace;
+  font-size: 1em;
+  line-height: 1.2em;
+  white-space: pre; 
+  background-color: #333;
+  color: white;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; /* just in case */
+  padding: 1em;
+  margin: 1.2em 1em;
+  min-width: 50%; 
+  position: relative;
+  overflow-x: scroll;
+}
+
+pre:before {
+  content: "Answer";
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0; 
+  min-width: 100%;
+  background-color: #333;
+  color: white;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; /* just in case */
+  padding: 1em 0;
+  text-align: center;
+  height: 100%;
+}
+
+pre.visible:before {
+  display: none;
+}
+
+pre:hover:before {
+  display: none;
+}
+
+.assignment_content ul {
+    list-style: decimal;
+}
+
+.assignment_content ul ul {
+  padding-left: 40px;
+}
+
+
+
+

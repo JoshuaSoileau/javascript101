@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="codecamp, charleston digital corridor" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>Assignments</title>
+
+    <!--*****/////  Stylesheets  /////*****-->
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/reset.css">      
+    <link rel="stylesheet" media="screen" href="../stylesheets/deck/extensions/deck.goto.css">
+    <link rel="stylesheet" media="screen" href="../stylesheets/deck/extensions/deck.menu.css">
+    <link rel="stylesheet" media="screen" href="../stylesheets/deck/extensions/deck.navigation.css">
+    <link rel="stylesheet" media="screen" href="../stylesheets/deck/extensions/deck.status.css">
+    <link rel="stylesheet" media="screen" href="../stylesheets/deck/extensions/deck.scale.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+
+  </head>
+
+  <body>
+    
+    <header class="index_header">
+      
+      <div class="index_header_wrapper">
+        
+        <ul class="header_left_nav">
+          <li><a href="../index.html">Home</a></li>
+          <li class="active_link"><a href="../assignments.html">Assignments</a></li>
+        </ul>
+        
+        <ul class="header_right_nav">
+          <li><a href="../screencasts.html">Screencasts</a></li>          
+          <li><a href="../references.html">Resources</a></li>
+        </ul>
+    
+        <a href="index.html">
+          <img class="index_logo" src="../images/logo.png" /> 
+        </a>
+      
+      </div>
+      
+    </header>
+    
+    <!--*****/////  Assignments - Content /////*****-->
+    
+    <section class="index_content">
+      
+      <h2 class="course_title">Assignments</h2>
+      
+      <div class="assignments_wrapper">
+        
+        <!--*****/////  List of Assignments  /////*****-->
+        
+        <ul class="assignments">
+          <li class="assignment active_assignment_link" data-index="1">
+            <span class="assignment_toggle">What is Javascript?</span>
+          </li>
+          <li class="assignment" data-index="2">
+            <span class="assignment_toggle">Assignment 1: Numbers</span>
+          </li>
+          <li class="assignment" data-index="3">
+            <span class="assignment_toggle">Assignment 2: Strings</span>
+          </li>
+          <li class="assignment" data-index="4">
+            <span class="assignment_toggle">Assignment 3: Variables</span>
+          </li>          
+          <li class="assignment" data-index="5">
+            <span class="assignment_toggle">Assignment 4: Logic pt. 1</span>
+          </li>
+          <li class="assignment" data-index="6">
+            <span class="assignment_toggle">Assignment 5: Arrays</span>
+          </li>          
+          <li class="assignment" data-index="7">
+            <span class="assignment_toggle">Assignment 6: Logic pt. 2</span>
+          </li>
+        </ul>
+        
+        <!--*****/////  Corresponding Assignment  /////*****-->
+        
+        <div class="assignment_content">
+          
+          <!--*****/////  Assignment Box 1  /////*****-->
+          
+          <div class="assignment_text active_assignment" data-index="1" >
+
+            <p class="assignment_box_details">
+              <strong>Javascript != Java</strong>
+            </p>
+            
+            <p class="assignment_box_details">
+              Javascript is a programming language developed in the late 1990s by Netscape. Microsoft said no.
+            </p>
+
+            <p class="assignment_box_details">
+              It's similar to most other programming languages, variables, loops, logic, functions. The difference is the browser engine.
+            </p>
+            
+            <p class="assignment_box_details">
+              Modern browsers let you practice javascript inside the browser in real time. How is this different from a language like C++? <br/>Javascript is still compiled, but it is compiled in the browser by the browser's javascript engine.
+            </p>
+
+            <p class="assignment_box_details">
+              This means we can test our javascript in the browser before saving it to our .js files!
+            </p>
+            
+          </div>
+          
+          <!--*****/////  Assignment Box 2  /////*****-->
+
+          <div class="assignment_text" data-index="2" >
+
+            <p class="assignment_box_details">
+              <strong>Numbers</strong>
+            </p>
+
+            <p class="assignment_box_details">
+              We can use the javascript console in Google Chrome to write some JS! Open up Google Chrome.
+            </p>
+            
+            <p class="assignment_box_details">
+              <ul>
+                <li>Right click anywhere on the page and click 'inspect element'. Then click the console tab. (insert explanation of devtools here)</li>
+                <li>There are a handful of variable types in javascript (insert explanation of variables here). Let's start with numbers. Type some numbers in your JS console.</li>
+                <li>We can also do math in our console! Let's try some basic math. Add 2 numbers together. <pre>2 + 7</pre></li>
+                <li>We can get into the negatives as well. Create a negative math equation <pre>2 * 7 - 100</pre></li>
+                <li>Decimals also work (kinda). Do some arithmetic with decimals. <pre>.5 * .5</pre><pre>.83 + .17</pre><pre>.999 - 3.212</pre></li>
+                <li>What about decimal subtraction? <pre>2 - .3</pre><pre>.86 - .177</pre><pre>.3 - .2</pre></li> What happened on that last one?<br>Like in other programming languages, decimals are floating point numbers, meaning the arithmetic can get sticky. Don't always trust your math to be correct! Always check it!
+              </ul>
+            </p>
+            
+          </div>
+          
+          <!--*****/////  Assignment Box 3  /////*****-->
+        
+          <div class="assignment_text" data-index="3" >
+
+            <p class="assignment_box_details">
+              <strong>Strings</strong>
+            </p>
+
+            <p class="assignment_box_details">
+              Strings are a little bit funner to play with than numbers.
+            </p>
+            
+            <p class="assignment_box_details">
+              <ul>
+                <li>Another type of variable in javascript are strings. (insert explanation of strings here). Create a string out of your name! <pre>"Josh Soileau"</pre></li>
+                <li>Guess, what? Strings can be added together too! Create two different strings and add them together. <pre>"My name is " + "Josh Soileau"</pre></li>
+                <li>But we get into weird stuff when we add two different TYPES of things together. Add a number and a string together. <pre>"My Name Is " + 42</pre><pre>2 + "2"</pre><pre>"86" + 7 + 5 + "3" + 0 + "9"</pre>How does this work? (insert explanation of auto-type conversion)</li> 
+              </ul>
+            </p>
+
+          </div>
+          
+          <!--*****/////  Assignment Box 4  /////*****-->
+          
+          <div class="assignment_text" data-index="4" >
+            <
+            <p class="assignment_box_details">
+              <strong>Variables</strong>
+            </p>
+
+            <p class="assignment_box_details">
+              We now know we can create numbers and strings. But we will need to be able to save those things in memory. Enter the 'var' javascript keyword.
+            </p>
+            
+            <p class="assignment_box_details">
+              <ul>
+                <li>Remember the exercise where we added the strings "My name is " and "[insert my name]" together? Do the same thing but save those strings as variables first. <pre>var introductionText = "My name is "; </br>var myName = "Josh Soileau";</br>introductionText + myName</pre> (insert explanation of the semantics above, what is var, what is the semicolon, the equals sign, etc.)</li>
+                <li>Variables work for all data types. Save 2 numbers into 2 different variables (name them appropriately), and a string into a third variable, then add them all together and save that into a 4th variable named "answer". <pre>Answer left blank, to be completed by instructor in console.</pre> (insert explanation of naming convention, best practices)</li>
+              </ul>
+            </p>
+
+          </div>
+
+
+          <!--*****/////  Assignment Box 5  /////*****-->
+          
+          <div class="assignment_text" data-index="5" >
+            
+            <p class="assignment_box_details">
+              <strong>Logic pt. 1: If Statements</strong>
+            </p>
+
+            <p class="assignment_box_details">
+              So we can create these variables, but that's useless unless we add a little logic into it. Let's start with 'if', 'else' statements.
+            </p>
+            
+            <p class="assignment_box_details">
+              <ul>
+                <li>'If' statements let you run some code based on whether or not some condition passes. Here's the syntax: <pre class="visible">if( SOME CONDITION TO CHECK ) { <br/>    CODE TO RUN IF CONDITION PASSES <br>} </pre>
+                     Here's an example: <pre class="visible">var oldLadyIsSinging = 1;<br/><br/>if( oldLadyIsSinging ) {<br/>    var itIsOver = 1;<br/>}</pre></li>
+                <li>What if we only want something to happen if the 'if' condition fails? 'Else' statements! <pre class="visible">var oldLadyIsSinging = 1;<br/><br/>if( oldLadyIsSinging ) {<br/>    var itIsOver = 1;<br/>} else {<br/>    var itIsOver = 0;<br/>}</pre></li>
+                <li>We've secretly just introduced a NEW data type, BOOLEANS! Booleans are a data type that can only ever have 1 of 2 different values, true or false. Booleans are used in 'if' statements and loops. Here's a few examples of Booleans: <pre class="visible">true</pre><pre class="visible">false</pre>In addition to those two, comparison expressions can be evaluated as a boolean. Try putting these in your console and see what you get: <pre>10 > 5</pre><pre>10 > 15</pre><pre>var myNameString = "My name is Josh Soileau";<br/>myNameString === "My name is Josh Soileau"</pre><pre>var myNameString = 123456;<br/>myNameString === "My name is Josh Soileau"</pre>(insert explanation of === vs == )</li>
+                <li>All of these examples of booleans can be used inside an if statement as the condition to check!</li>
+                <li>PROMPT exercise. To be explained in class!</li>
+              </ul>
+            </p>
+
+          </div>
+
+
+          <!--*****/////  Assignment Box 6  /////*****-->
+          
+          <div class="assignment_text" data-index="6" >
+            
+            <p class="assignment_box_details">
+              <strong>Arrays</strong>
+            </p>
+
+            <p class="assignment_box_details">
+              Let's learn about yet another data type in javascript: arrays. Arrays are one of the most useful things in javascript, they let you organize things in groups.
+            </p>
+            
+            <p class="assignment_box_details">
+              <ul>
+                <li>Arrays are defined by square brackets []. When the compiler sees those square brackets, it knows to expect an array of items inside the brackets. <pre class="visible">[ ARRAY ITEMS GO IN HERE ]</pre></li>
+                <li>The items inside the brackets are all separated by commas, to signify the dividers to the compiler. <pre class="visible">[ arrayItem, anotherArrayItem, yetAnotherArrayItem ]</pre>In the above case we have an array of size 3.</li>
+                <li>Create an array of strings. Make it have at least 4 items in it, and make each item be your favorite topping on a pizza. Save that array to a variable. <pre>var pizzaTopings = [ "Cheese", "Pepperoni", "Green Peppers", "Red Peppers", "Mushrooms" ];</pre></li>
+                <li>Okay, so we now have an array with values in it. How do we get those values later? We can access arrays using INDEXES</li>
+                <li>What are indexes? They are slots in the array! But the secret is that the first slot of the array is index "0" (like all things comp sci) (insert explanation of starting at 0 and not 1). <br>Think of it this way:<pre class="visible">[ "Cheese", "Pepperoni", "Green Peppers", "Red Peppers", "Mushrooms" ]<br/><br/>   Index 0    Index 1        Index 2         Index 3        Index 4</pre></li>
+                <li>So the way we access indexes of the array are by using indexes in the array. Here's the syntax: <pre class="visible">var pizzaTopings = [ "Cheese", "Pepperoni", "Green Peppers", "Red Peppers", "Mushrooms" ];<br/>pizzaToppings[ NUMBER OF INDEX I WANT TO ACCESS ]</pre></li>  
+                <li>To get the first index of the array we would use the 0th index. <pre class="visible">var pizzaTopings = [ "Cheese", "Pepperoni", "Green Peppers", "Red Peppers", "Mushrooms" ];<br>pizzaToppings[0];</pre></li>
+                <li>To get the third index of the array we would use the 2nd index. <pre class="visible">var pizzaTopings = [ "Cheese", "Pepperoni", "Green Peppers", "Red Peppers", "Mushrooms" ];<br>pizzaToppings[2];</pre></li>
+                <li>How do we get the last item in the array? In this case we know it's the 4th index. <pre class="visible">var pizzaTopings = [ "Cheese", "Pepperoni", "Green Peppers", "Red Peppers", "Mushrooms" ];<br>pizzaToppings[4];</pre>But what if we didn't know how long our array was? What if somebody inserts a 6th item in the array without us knowing?<br/>You can learn how long an array is by calling ".length" on it like this; <pre class="visible">[ "Cheese", "Pepperoni", "Green Peppers", "Red Peppers", "Mushrooms" ].length</pre>Which is the same thing as saying: <pre class="visible">var pizzaTopings = [ "Cheese", "Pepperoni", "Green Peppers", "Red Peppers", "Mushrooms" ];<br/>pizzaToppings.length</pre>Notice how it returns the number "5". But our last index is index #4! So to get the last element in the array, we could do this: <pre class="visible">var pizzaTopings = [ "Cheese", "Pepperoni", "Green Peppers", "Red Peppers", "Mushrooms" ];<br/><br/>pizzaToppings[ pizzaToppings.length - 1 ];</pre></li>
+                <li>It's important to note that arrays don't have to hold just 1 type of data. You can have an array of anything! <pre class="visible">[ "Cheese", 42, 999 ]<br>[ "Rocky", true, false, "Bullwinkle" ]</pre>You can even have an array of arrays! <pre class="visible">[ [12, 32], ["Cherry", "Vanilla", false] ]</pre></li>
+              </ul>
+            </p>
+
+          </div>
+
+
+          <!--*****/////  Assignment Box 7  /////*****-->
+          
+          <div class="assignment_text" data-index="7" >
+            
+            <p class="assignment_box_details">
+              <strong>Logic pt. 2: For Loops!</strong>
+            </p>
+
+            <p class="assignment_box_details">
+              Sometimes you want to run the same bit of code over and over again. There are a couple of ways to do that in javascript, we are going to start with For loops!
+            </p>
+            
+            <p class="assignment_box_details">
+              <ul>
+              <li>For loops are similar to if statements. You have some parenthesis and some curly braces. The code inside the curly braces is the code that runs during the loop. Here's the syntax: <pre class="visible">for( BEFORE CODE ; WHILE CONDITION ; AFTER CODE ) {<br/>    CODE TO BE RUN DURING LOOP <br/>}<br/><br/>BEFORE CODE: this is set at the beginning of the loop<br>It is usually something like var i=0 or something like that<br/><br/>WHILE CONDITION: the condition to keep running the loop<br/><br/>AFTER CODE: this runs after every iteration of the loop</pre></li>
+              <li>Here's a simple example of for loops: <pre class="visible">var i;<br>var concatNumbersVar = "";<br>for( i=0; i<6; i++) {<br>    concatNumbersVar = concatNumbersVar + i;<br>}</pre>At the top, we create two variables, one isn't defined yet (i), the other is an empty string. The loop starts at i = 0, and loops through as long as i < 6, but increasing i by 1 every time the loop finishes.<br>The code inside the loop takes our empty string, and appends a number on the back of it every time the loop happens (remember what happens when you add a string and a number together?)</li>
+              <li>Exercise time!
+                <ul>
+                  <li>Think about all the mechanical parts of an airplane. Create an array (at least length 6) containing all the parts of a plane that you think it needs to fly, and save that array to a variable.</li>
+                  <li>Using a For loop iterate through this array, and use the "alert()" function to pop up and say each part of the plane.</li>
+                </ul>
+              </li>
+              <li>Extended Exercise.
+              <ul>
+                <li>Instead of creating an array and then iterating through it like we just did, we are going to build our array in a for loop. Create an empty array called "airplaneParts"</li>
+                <li>Create a for loop that loops 6 times, and inside of it, use "prompt()" to ask the user to state a piece of an airplane. Save that value and "push" that value to your "airplaneParts" array.</li>
+                <li>After the array is finished (outside the loop), use "alert" to pop up and list all the parts that the user put in in the previous steps.</li>
+              </ul>
+              </li>
+              </ul>
+            </p>
+
+          </div>
+        
+      </div>
+      </div>
+      
+    </section>
+    
+    <footer class="footer">
+      <div class="copyright">
+        <h3>Copyright © 2014 Charleston Digital Corridor</h3>
+        <img class="cdc_logo" src="images/cdc_logo.png" />
+      </div>
+    </footer>
+    
+    <!--*****/////  Site Functionality  /////*****-->
+    
+    <script src="../javascripts/jquery-10.1.2.min.js"></script>
+    <script src="../javascripts/modernizr.custom.js"></script>
+    <script src="../javascripts/deck/deck.core.js"></script>
+    <script src="../javascripts/deck/extensions/deck.menu.js"></script>
+    <script src="../javascripts/deck/extensions/deck.goto.js"></script>
+    <script src="../javascripts/deck/extensions/deck.status.js"></script>
+    <script src="../javascripts/deck/extensions/deck.navigation.js"></script>
+    <script src="../javascripts/deck/extensions/deck.scale.js"></script>
+    <script src="../javascripts/site.js"></script>
+
+  </body>
+</html>
