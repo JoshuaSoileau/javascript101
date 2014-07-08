@@ -31,9 +31,11 @@ if ( url.indexOf('screencasts') > -1 ) {
 
 if ( url.indexOf('assignments') > -1 ) {
 	$('.assignment').click(function(){
+
 		$('.active_assignment_link').removeClass('active_assignment_link');
 		$(this).addClass('active_assignment_link');
 		link_index = $(this).data('index');
+
 		$('.assignment_text').each(function(){
 			var content_index = $(this).data('index');
 			if(content_index == link_index) {
@@ -43,3 +45,20 @@ if ( url.indexOf('assignments') > -1 ) {
 		});
 	});
 }
+
+$('.assignments').first().show();
+$('.assignments-container > li > span').first().addClass('active');
+
+$('.assignments-container > li > span').click(function() {
+	$('.assignments-container > li > span').removeClass('active');
+	$('.assignments').slideUp();
+	$(this).toggleClass('active').parent().children('ul').slideDown().children('li').first().trigger('click');
+});
+
+
+
+
+
+
+
+
