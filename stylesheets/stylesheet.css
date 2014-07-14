@@ -245,7 +245,7 @@ div.index_left_content {
   float: left;
   background-color: #fff;
   width: 48%;
-  min-height: 440px;
+  min-height: 475px;
   margin: 45px 0 0 2px;
   text-align: center;
   padding-bottom: 10px;
@@ -256,7 +256,7 @@ div.index_right_content {
   float: right;
   background-color: #fff;
   width: 48%;
-  min-height: 440px;
+  min-height: 475px;
   margin: 45px 2px 0 0;
   text-align: center;
   padding-bottom: 10px;
@@ -320,12 +320,6 @@ strong {
   font-size: 50px;
   text-shadow: 1px 1px 1px #fff; }
 
-section.index_content div.index_right_content img.instructor_thumb {
-  float: left;
-  padding-left: 15px;
-  padding-top: 10px;
-  padding-right: 5px; }
-
 div.instructor_pullout {
   float: left;
   margin-left: 20px;
@@ -377,8 +371,6 @@ li.bottom_list_1 {
 i {
   font-style: italic; }
 
-div.left_index_content {
-  margin: 0px auto; }
 
 /* screencasts */
 ul.video_nav {
