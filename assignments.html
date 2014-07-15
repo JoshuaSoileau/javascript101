@@ -893,7 +893,7 @@ html
                 <li>
                   <span class="text-highlight">getElementById()</span>. Change is good. The DOM API (an API is just a way for one program (e.g. ours) to talk to another (e.g. the browser)) lets us manipulate the page. Let's say we wanted to change the h1 element on a page. Before we can change the element, we have to select it. The easiest way is to select a node by its ID, since <span class="text-highlight">an ID can only appear once on a page</span>.
                   <br>&nbsp;<br>
-                  Open this codepen: <a href="http://codepen.io/mccambridge/pen/fHKmn">http://codepen.io/mccambridge/pen/fHKmn</a>. In the JavaScript window on the right, enter the following code. The result will automatically re-run.
+                  Open this codepen: <a target="_blank" href="http://codepen.io/mccambridge/pen/fHKmn">http://codepen.io/mccambridge/pen/fHKmn</a>. In the JavaScript window on the right, enter the following code. The result will automatically re-run.
                   <pre class="visible">
 var theHeader = document.getElementById('the-title');
 alert(theHeader);
@@ -913,11 +913,34 @@ theHeader.innerHTML = 'Well, why don\'t you write your own header.';
                   </pre>
                 </li>
                 <li>
-                  <span class="text-highlight">Other Ways To Access A Node</span> The browser gives us a few other methods to grab hold of our HTML elements. Let's start with document.getElementsByTagName(). Notice it's 'elements' (plural). This method returns an array. Try the following in the CodePen.
+                  <span class="text-highlight">Other Ways To Access a Node</span> The browser gives us a few other methods to grab hold of our HTML elements. Let's start with document.getElementsByTagName(). Notice it's 'elements' (plural). This method returns an array. Try the following in the CodePen.
                   <pre class="visible">
 var theHeader = document.getElementsByTagName('h1');
 alert(theHeader.length);
                   </pre>
+                  What happens if you add another h1 element? What if you want to manipulate the h1 elements? How would you accomplish that (remember looping around arrays from previous classes)?
+                  <br>&nbsp;<br>
+                  The API also provides document.getElementsByClassName() which also returns an array but takes &mdash; you guessed it! &mdash; a class name as its parameter.
+                  <br>&nbsp;<br>
+                  More recently, browser developers have included the document.querySelector() method, which takes a CSS selector, just like jQuery. Try this one in the CodePen:
+                  <pre class="visible">
+var theHeader = document.querySelector('#the-title');
+theHeader.innerHTML = 'This works with id, class and tag name. It selects the first instance of a match.'
+                  </pre>
+                  The API also provides document.querySelectorAll() which returns multiples. MDN does a good job documenting the API <a href="https://developer.mozilla.org/en-US/docs/Web/API/document.querySelectorAll">here</a>.
+                </li>
+                <li>
+                  <span class="text-highlight">Getting And Setting Attributes</span> Aside from text, attributes are the other important side of HTML elements. Text populates our pages with content. Attributes give our elements options. Without attributes, img tags would be sourceless. Anchor tags would be href-less. What if we want to dive into selectors? Let's start with a fresh CodePen: <a target="_blank" href="http://codepen.io/mccambridge/pen/IxGDq">http://codepen.io/mccambridge/pen/IxGDq</a>.
+                  <pre class="visible">
+var theKitteh = document.querySelector('#awsum-kitteh-pic');
+alert(theKitteh.getAttribute('src'));
+                  </pre>
+                  Using the node's getAttribute() method, we can check to see what the img src attribute is set to. What if we want to change it up?
+                  <pre class="visible">
+var theKitteh = document.querySelector('#awsum-kitteh-pic');
+theKitteh.setAttribute('src', 'http://placekitten.com/900/200');
+                  </pre>
+                  setAttribute() takes two parameters. The first selects which parameter on the element is getting reset. The second tells the browser what to set it to. Now, you can change any attribute on any element. Meow!
                 </li>
               </ul>
               &nbsp;
