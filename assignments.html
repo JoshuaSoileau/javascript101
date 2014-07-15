@@ -125,7 +125,7 @@
                 <span class="assignment_toggle">The Document Object Model (DOM)</span>
               </li>
               <li class="assignment" data-index="14">
-                <span class="assignment_toggle">Alphabet soup: the DOM API</span>
+                <span class="assignment_toggle">The DOM API</span>
               </li>
               <li class="assignment" data-index="15">
                 <span class="assignment_toggle">Assignment 1: Mess with Google</span>
@@ -820,7 +820,7 @@ window.
               <strong>The Document Object Model</strong>
             </p>
             <p class="assignment_box_details">
-              When you write an HTML document and load it in a browser, the browser interprets your HTML and builds a web page. The elements you write, the attributes in your elements and the text inside your elements are all nested together neatly in your HTML. The browser translates this structure into the page as a hierarchy of nodes and relationships. This is the DOM. It is simply the constructed web page itself, mapped to a hierarchical tree. The HTML you write is parsed by the browser and becomes the DOM.
+              When you write an HTML document and load it in a browser, the browser interprets your HTML and builds a web page. The elements you write, the attributes in your elements and the text inside your elements are all nested together neatly in your HTML. The browser translates this structure into the page as a hierarchy of nodes and relationships. This is the DOM. It is simply a representation of the constructed web page itself, mapped to a hierarchical tree. Think of it as a map. The HTML you write is parsed by the browser and becomes the DOM. The DOM is the foundation of the page you see.
             </p>
             
             <p class="assignment_box_details">
@@ -887,23 +887,40 @@ html
             <p class="assignment_box_details">
               Okay, great. We have the DOM. So what? The browser downloads your HTML, styles are applied, images and fonts loaded. Without a line of JavaScript, the DOM exists and a polished web page gets painted to my browser. What good is JavaScript?
             </p>
-            <p class="assignment_box_details">
-              What if you want to make something happen on the page after it's initially loaded? Enter the DOM API. An API (application programming interface) is just a way for two programs to talk to each other. Program A is working on x. Program B comes along and wants to make y happen. In our case, Program A is the browser running on your computer, phone, tablet, whatever. Program B is your web app. Once the browser parses your HTML and creates the web page, the HTML file you wrote has done its job. If you want anything to happen after page load (okay, CSS can make some things happen, but we're talking about making crazy magic happen), then you're going to be writing JavaScript that talks to the DOM API.
-            </p>
             
             <p class="assignment_box_details">
               <ul>
                 <li>
-                  <span class="text-highlight">getElementById()</span>. Objects are defined using curly braces. Inside the curly braces, your object will contain one or many key/value pairs, separated by a comma. Each key and value is separated by a colon. The key may be written without quotes, with single-quotes or with double-quotes.
+                  <span class="text-highlight">getElementById()</span>. Change is good. The DOM API (an API is just a way for one program (e.g. ours) to talk to another (e.g. the browser)) lets us manipulate the page. Let's say we wanted to change the h1 element on a page. Before we can change the element, we have to select it. The easiest way is to select a node by its ID, since <span class="text-highlight">an ID can only appear once on a page</span>.
+                  <br>&nbsp;<br>
+                  Open this codepen: <a href="http://codepen.io/mccambridge/pen/fHKmn">http://codepen.io/mccambridge/pen/fHKmn</a>. In the JavaScript window on the right, enter the following code. The result will automatically re-run.
                   <pre class="visible">
-{
-  key: 'value',
-  "iAmAKey": "I am a value",
-  'singleQuotes': "double quotes"
-};
+var theHeader = document.getElementById('the-title');
+alert(theHeader);
+                  </pre>
+                  getElementById() is a method on the document object. Notice the contents of the alert? It's an object. Every DOM element is an object. We'll learn what to do with that in a minute.
+                </li>
+                <li>
+                  <span class="text-highlight">Accessing a Text Node</span> Now that we have access to an element and remembering that text is a node in itself, how can we dive one level down into the text node?
+                  <pre class="visible">
+var theHeader = document.getElementById('the-title');
+alert(theHeader.innerHTML);
+                  </pre>
+                  innerHTML is a property of our HTML node object. It is simply a record of the HTML inside of this node. In the current case, the only HTML left is simple text.  Let's try changing it.
+                  <pre class="visible">
+var theHeader = document.getElementById('the-title');
+theHeader.innerHTML = 'Well, why don\'t you write your own header.';
+                  </pre>
+                </li>
+                <li>
+                  <span class="text-highlight">Other Ways To Access A Node</span> The browser gives us a few other methods to grab hold of our HTML elements. Let's start with document.getElementsByTagName(). Notice it's 'elements' (plural). This method returns an array. Try the following in the CodePen.
+                  <pre class="visible">
+var theHeader = document.getElementsByTagName('h1');
+alert(theHeader.length);
                   </pre>
                 </li>
               </ul>
+              &nbsp;
             </p>
 
           </div>
