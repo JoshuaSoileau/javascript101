@@ -811,6 +811,102 @@ window.
             </p>
 
           </div>
+
+          <!--*****/////  Assignment Box 13  /////*****-->
+                    
+          <div class="assignment_text" data-index="13" >
+            
+            <p class="assignment_box_details">
+              <strong>The Document Object Model</strong>
+            </p>
+            <p class="assignment_box_details">
+              When you write an HTML document and load it in a browser, the browser interprets your HTML and builds a web page. The elements you write, the attributes in your elements and the text inside your elements are all nested together neatly in your HTML. The browser translates this structure into the page as a hierarchy of nodes and relationships. This is the DOM. It is simply the constructed web page itself, mapped to a hierarchical tree. The HTML you write is parsed by the browser and becomes the DOM.
+            </p>
+            
+            <p class="assignment_box_details">
+              <ul>
+                <li>
+                  <span class="text-highlight">A Simple Page</span>. Consider the following HTML.
+                  <pre class="visible">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;The World Cup is over&lt;/title&gt;
+    &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container"&gt;
+      &lt;h1 class="header"&gt;The World Cup is, like, over&lt;/h1&gt;
+      &lt;p style="color: #933;"&gt;Now we have to watch baseball. Ugh.&lt;/p&gt;
+      &lt;p class="footnote"&gt;Just kidding! Baseball is totes exciting cuz they score lots.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                  </pre>
+                  Once the browser reads the markup and constructs the page, the DOM will look something like this.
+                  <pre class="visible">
+html
+  |-head
+  | |-title
+  | | |-"The World Cup is over"
+  | |-link
+  | | |-(rel="icon")
+  | | |-(type="image/x-icon")
+  | | |-(href="/images/favicon.ico")
+  |-body
+    |-div
+    |-(class="container")
+    |-h1
+    | |-(class="header")
+    | |-"The World Cup is, like, over"
+    |-p
+    | |-(style="color: #933;")
+    | |-"Now we have to watch baseball. Ugh."
+    |-p
+      |-(class="footnote")
+      |-"Just kidding! Baseball is totes exciting cuz they score lots."
+                  </pre>
+                  That is the DOM. You have element nodes, attribute nodes and text nodes. Technically, you could also have comment nodes, but let's stick with these three for now.
+                </li>
+                <li>
+                  <span class="text-highlight">In the console</span>. Open up a console window. When you look at you document structure (Elements tab in Chrome Inspector, HTML tab in Firefox), it looks like the HTML you would have written. But this series of collapsible HTML is a visual representation of the DOM.<br>
+                  &nbsp;<br>
+                  This is the interpreted DOM. As we'll see in the next section, we can use JavaScript to manipulate the DOM. The result of those manipulations will be different than the original HTML document. But the browser console will always reflect the current state of the DOM.<br>&nbsp;
+                </li>
+              </ul>
+            </p>
+
+          </div>
+
+          <!--*****/////  Assignment Box 14  /////*****-->
+                    
+          <div class="assignment_text" data-index="14" >
+            
+            <p class="assignment_box_details">
+              <strong>The DOM API</strong>
+            </p>
+            <p class="assignment_box_details">
+              Okay, great. We have the DOM. So what? The browser downloads your HTML, styles are applied, images and fonts loaded. Without a line of JavaScript, the DOM exists and a polished web page gets painted to my browser. What good is JavaScript?
+            </p>
+            <p class="assignment_box_details">
+              What if you want to make something happen on the page after it's initially loaded? Enter the DOM API. An API (application programming interface) is just a way for two programs to talk to each other. Program A is working on x. Program B comes along and wants to make y happen. In our case, Program A is the browser running on your computer, phone, tablet, whatever. Program B is your web app. Once the browser parses your HTML and creates the web page, the HTML file you wrote has done its job. If you want anything to happen after page load (okay, CSS can make some things happen, but we're talking about making crazy magic happen), then you're going to be writing JavaScript that talks to the DOM API.
+            </p>
+            
+            <p class="assignment_box_details">
+              <ul>
+                <li>
+                  <span class="text-highlight">getElementById()</span>. Objects are defined using curly braces. Inside the curly braces, your object will contain one or many key/value pairs, separated by a comma. Each key and value is separated by a colon. The key may be written without quotes, with single-quotes or with double-quotes.
+                  <pre class="visible">
+{
+  key: 'value',
+  "iAmAKey": "I am a value",
+  'singleQuotes': "double quotes"
+};
+                  </pre>
+                </li>
+              </ul>
+            </p>
+
+          </div>
         
       </div>
       </div>
