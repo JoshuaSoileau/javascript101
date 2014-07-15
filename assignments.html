@@ -117,7 +117,20 @@
           <!-- Day 3 -->
           <li>
             <span>Day 3</span>
-            
+            <ul class="assignments">
+              <li class="assignment active_assignment_link" data-index="12">
+                <span class="assignment_toggle">Object basics</span>
+              </li>
+              <li class="assignment" data-index="13">
+                <span class="assignment_toggle">The Document Object Model (DOM)</span>
+              </li>
+              <li class="assignment" data-index="14">
+                <span class="assignment_toggle">Alphabet soup: the DOM API</span>
+              </li>
+              <li class="assignment" data-index="15">
+                <span class="assignment_toggle">Assignment 1: Mess with Google</span>
+              </li>
+            </ul>
           </li>
 
 
@@ -686,6 +699,109 @@ var (crashTheParty = function( hostess )) {(( console.log("I wasn't invited to "
                 </li>
                 <li>
                   If time is left over at this point, change our variable types to ARRAYS, and modify all the functions to be able to handle multiple account holders.
+                </li>
+              </ul>
+            </p>
+
+          </div>
+
+          <!--*****/////  Assignment Box 12  /////*****-->
+                    
+          <div class="assignment_text" data-index="12" >
+            
+            <p class="assignment_box_details">
+              <strong>Object basics</strong>
+            </p>
+
+            <p class="assignment_box_details">
+              This is where you get your feet wet with objects. Objects are everywhere in JS. They are an additional datatype, like Number and Array. In fact, they are quite similar to arrays in that they are multiple, multidimensional data stores and can contain any type of data. You can have an objet of objects, and object of arrays, etc.
+            </p>
+            <p class="assignment_box_details">
+              The fundamental difference between objects and arrays is their construction as key/value pairs. Where arrays are simple collections with a numerical key, objects take a specified keyword. Objects can be referenced either by square bracket notation or by dot syntax. More about that below.
+            </p>
+            <p class="assignment_box_details">
+              We won't get too deep into objects in this class, just enough to get started working with the DOM. But understanding how to use objets is key to understanding more advanced JavaScript and learning how to use JS frameworks like jQuery, Angular, Node, Backbone, Underscore, Moment, Meteor, React... The list goes on (and on).
+            </p>
+            
+            <p class="assignment_box_details">
+              <ul>
+                <li>
+                  <span class="text-highlight">Basic Notation</span>. Objects are defined using curly braces. Inside the curly braces, your object will contain one or many key/value pairs, separated by a comma. Each key and value is separated by a colon. The key may be written without quotes, with single-quotes or with double-quotes.
+                  <pre class="visible">
+{
+  key: 'value',
+  "iAmAKey": "I am a value",
+  'singleQuotes': "double quotes"
+};
+                  </pre>
+                </li>
+                <li>
+                  <span class="text-highlight">Accessing Values</span>. To access the value of an object, simply refer to its key either via dot notation or by accessing its key in square brackets.
+                  <pre class="visible">
+var dog = {
+  breed: 'Great Dane',
+  color: 'harlequin',
+  food: 'small children'
+};
+
+// get the value using dot notation
+dog.food;
+
+// get the value using bracket notation
+dog['food'];
+
+// ^^^ note that we used food as a string in the last line.
+
+                  </pre>
+                </li>
+                <li>
+                  <span class="text-highlight">Properties and Methods</span>. In regular JS, we have variables and functions. In objects, we generally refer to properties and methods in the same way. While this isn't as strict as other programming languages, you're still going to run into the terminology. Properties describe the object. Methods do something.
+                  <pre class="visible">
+var dog = {
+  breed: 'Great Dane',
+  color: 'harlequin',
+  food: 'small children',
+  
+  bark: function() {
+    alert('WOOF!');
+  },
+  
+  getColor: function() {
+    return this.color;
+    // this refers to the context in which the funciton is called
+    // this can get you into trouble
+    // if you're really curious, look up JavaScript's call() funciton
+  }
+};
+
+dog.bark();
+
+dog.getColor();
+                  </pre>
+                </li>
+                <li>
+                  <span class="text-highlight">Native Objects</span>. JavaScript comes packages with a number of native objects like Math and Date. Back in the day, many designers worked with the Image object to preload mouseover images before you could really do that with CSS. Native objects ship with the browser (hence native) and are always there.
+                  <pre class="visible">
+var someDate = new Date();
+someDate.getFullYear(); // ZOMG!
+
+// the Math object is really quite useful
+console.log('The Life of ' + Math.PI);
+
+// no, really
+Math.round(Math.PI);
+
+// by the way, this stuff is case sensitive, so watch out!
+                  </pre>
+                </li>
+                <li>
+                  <span class="text-highlight">The document and window Objects</span>. Here is where things get a little more fun, especially for those of you who are bored of working exclusively in the console. Go ahead and type the following into the browser console:
+                  <pre class="visible">
+window.
+                  </pre>
+                  Notice the console is trying to autocomplete for you. Each autocomplete possibility is a member of the window object. With so many API's within the HTML spec, you have access to a TON of possibilities. Play with window.history and see what's in there.<br>
+                  <br><!-- ugh, I know -->
+                  The same goes for the document object. We have access to all kinds of browser behaviors just through the native document object. This is how we'll manipulate the DOM later on in the class.  For now let's move on ... what is the DOM, anyway?
                 </li>
               </ul>
             </p>

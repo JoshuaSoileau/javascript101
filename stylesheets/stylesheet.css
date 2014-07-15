@@ -423,6 +423,7 @@ li.active_video {
     font-family: LatoItalic;
     font-size: 2em;
     position: relative;
+    cursor: pointer;
     clear: left; }
     .assignments-container > li > span {
       margin-bottom: 10px;
@@ -537,5 +538,9 @@ pre.visible:before, pre:hover:before {
 
 .content_text strong {
   font-size: 24px; }
+
+.text-highlight {
+  color: #0ad;
+}
 
 /*# sourceMappingURL=stylesheet.css.map */
