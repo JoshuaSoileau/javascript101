@@ -1155,7 +1155,76 @@ var animateCloud = function(speed) {
                 </li>
                 <li>See what other modifications you could make to this script to animate the scene differently.</li>
                 &nbsp;<br>  
-      </div>
+              </ul>
+            </p>
+          </div>
+
+          <!--*****/////  Assignment Box 18  /////*****-->
+                    
+          <div class="assignment_text" data-index="18" >
+            
+            <p class="assignment_box_details">
+              <strong>JavaScript Events</strong>
+            </p>
+            <p class="assignment_box_details">
+              Events are generally triggers for some behavior to occur. This could be a mouse click on an element, the page itself loading, an image loading, the user entering a form field, a keystroke, etc. When an event occurs, the browser fires an event handler function that executes a piece of code. Let's dive in starting with our cloud animation.
+            </p>
+            <p class="assignment_box_details">
+              <ul>
+                <li>
+                  So now we're simply going to create a function we want the event to call, and we're going to wire up the event itself. Events are incredibly powerful. You can probably see where we're going with this.
+                  <pre class="visible">
+// set cloud properties
+var cloud = document.querySelector('#cloud');
+cloud.style.backgroundImage = "url('http://1-background.com/images/clouds/white-clouds-blue-sky-seamless-background-tile.jpg')";
+cloud.style.backgroundPositionX = 0;
+cloud.style.backgroundPositionY = 0;
+cloud.style.width = '100%';
+cloud.style.height = '314px';
+
+var animateCloud = function(speed) {
+  var speed = speed || 2;
+  
+  var currentOffset = parseInt(cloud.style.backgroundPositionX, 10);  
+  cloud.style.backgroundPositionX = (currentOffset - speed) + 'px';
+  
+  setTimeout(animateCloud, 35, speed);
+}
+
+var handleClickYo = function() {
+  btn.style.display = 'none';
+  cloud.style.display = 'block';
+  animateCloud(1);
+}
+
+// set up the event
+var btn = document.getElementById('cloudControl');
+//btn.addEventListener('click', handleClickYo);
+                  </pre>
+                </li>
+                <li>There is a whole list of events over at MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/Events">https://developer.mozilla.org/en-US/docs/Web/Events</a>. Be careful, not all of them are supported in every browser. (Always remember to make sure the code you write is supported by modern browsers.) ;)</li>
+                &nbsp;<br>  
+              </ul>
+            </p>
+          </div>
+
+          <!--*****/////  Assignment Box 19  /////*****-->
+                    
+          <div class="assignment_text" data-index="19" >
+            
+            <p class="assignment_box_details">
+              <strong>Assignment: Slideshow</strong>
+            </p>
+            <p class="assignment_box_details">
+              We might not have time to work this out in class. If you're having fun with this &mdash; and I'm sure you are &dash; then finish it at home. Let's build a slideshow of images. Let's keep it simple. We want three images of the same width and height to animate when you click on some previous and next buttons.<br>
+              &nbsp;<br>
+              What are the components of a slideshow, or carousel? We already listed some. We need images, buttons to which we wire up events. We need an outer container that will hide everything but the current image. We need an inner container that will be wide enough for our images to sit side-by-side-by-side.<br>
+              &nbsp;<br>
+              In the JavaScript, we need an animation function that sends the images left and right. We need to track where we are in the slideshow. We need events to call the animation function and tell the slide tracker what's going on. Finally, we need to handle shuffling the slides so that one slide is always to the left and right of the current slide.<br>
+              &nbsp;<br>
+              It's probably also a good idea to only allow one click to be processed until the current cycle finishes running. How do we wire this all together?
+            </p>
+          </div>
       </div>
       
     </section>
