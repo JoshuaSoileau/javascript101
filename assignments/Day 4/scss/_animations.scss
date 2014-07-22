@@ -1,0 +1,63 @@
+$GLOW_COLOR_1: #FF3E34;
+$GLOW_COLOR_2: #60FF67;
+$GLOW_COLOR_3: #4C79FF;
+
+@include keyframes(glow) {
+  25% {
+    text-shadow: 0 0 25px $GLOW_COLOR_1;
+    color: $GLOW_COLOR_1;
+  }
+  50% {
+    text-shadow: 0 0 25px $GLOW_COLOR_2;
+    color: $GLOW_COLOR_2;
+  };
+  75% {
+    text-shadow: 0 0 25px $GLOW_COLOR_3;
+    color: $GLOW_COLOR_3;
+  };
+}
+
+@mixin animation($animation...) {
+  -o-animation: $animation;
+  -moz-animation: $animation;
+  -webkit-animation: $animation;
+  animation: $animation;
+}
+
+@include keyframes(blink) {
+  $randomNumber : 0% + random(80);
+  #{ $randomNumber } {
+    background-color: black;
+  };
+  #{ $randomNumber + 10 } {
+    background-color: white;
+  };
+  #{ $randomNumber + 20 } {
+    background-color: black;
+  };
+}
+
+@include keyframes(playerRed) {
+  0% {
+    box-shadow: 3px 0px 25px red, 0px 3px 25px red, -3px 0px 25px red, 0px -3px 25px red;
+  }
+  50% {
+    box-shadow: 3px 0px 15px red, 0px 3px 15px red, -3px 0px 15px red, 0px -3px 15px red;
+  }
+  100% {
+    box-shadow: 3px 0px 25px red, 0px 3px 25px red, -3px 0px 25px red, 0px -3px 25px red;
+  }
+}
+
+
+@include keyframes(playerBlue) {
+  0% {
+    box-shadow: 3px 0px 25px blue, 0px 3px 25px blue, -3px 0px 25px blue, 0px -3px 25px blue;
+  }
+  50% {
+    box-shadow: 3px 0px 15px blue, 0px 3px 15px blue, -3px 0px 15px blue, 0px -3px 15px blue;
+  }
+  100% {
+    box-shadow: 3px 0px 25px blue, 0px 3px 25px blue, -3px 0px 25px blue, 0px -3px 25px blue;
+  }
+}

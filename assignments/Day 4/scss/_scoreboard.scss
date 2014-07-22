@@ -1,0 +1,54 @@
+$brown : #3B2716;
+.scoreboard {
+  background: $brown;
+  background-image: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 5px,
+          rgba(0,0,0,0.1) 5px,
+          rgba(0,0,0,0.1) 10px);
+  color: white;
+  width: 400px;
+  float: right;
+  text-align: center;
+  font-size: 2em;
+  padding: 10px 0 0;
+  > div {
+    clear: both;
+    padding: 10px;
+    height: 70px;
+  }
+  h3 {
+    width: 183px;
+    margin: 0 41px;
+    float: left;
+    padding: 0;
+  }
+  .score {
+    background-color: rgba(0,0,0,0.3);
+    width: 30%;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.homeActive {
+  .home h3 {
+    border-bottom: 2px solid white;
+  }
+} 
+
+.awayActive {
+  .away h3 {
+    border-bottom: 2px solid white;
+  }
+} 
+
+.inning {
+  color: gray;
+  h3 {
+    font-size: 0.8em;
+    text-align: right;
+  }
+}

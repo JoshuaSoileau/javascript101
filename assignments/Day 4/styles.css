@@ -1,0 +1,410 @@
+@-o-keyframes glow {
+  25% {
+    text-shadow: 0 0 25px #ff3e34;
+    color: #ff3e34; }
+
+  50% {
+    text-shadow: 0 0 25px #60ff67;
+    color: #60ff67; }
+
+  75% {
+    text-shadow: 0 0 25px #4c79ff;
+    color: #4c79ff; } }
+@-moz-keyframes glow {
+  25% {
+    text-shadow: 0 0 25px #ff3e34;
+    color: #ff3e34; }
+
+  50% {
+    text-shadow: 0 0 25px #60ff67;
+    color: #60ff67; }
+
+  75% {
+    text-shadow: 0 0 25px #4c79ff;
+    color: #4c79ff; } }
+@-webkit-keyframes glow {
+  25% {
+    text-shadow: 0 0 25px #ff3e34;
+    color: #ff3e34; }
+
+  50% {
+    text-shadow: 0 0 25px #60ff67;
+    color: #60ff67; }
+
+  75% {
+    text-shadow: 0 0 25px #4c79ff;
+    color: #4c79ff; } }
+@-keyframes glow {
+  25% {
+    text-shadow: 0 0 25px #ff3e34;
+    color: #ff3e34; }
+
+  50% {
+    text-shadow: 0 0 25px #60ff67;
+    color: #60ff67; }
+
+  75% {
+    text-shadow: 0 0 25px #4c79ff;
+    color: #4c79ff; } }
+@-o-keyframes blink {
+  65% {
+    background-color: black; }
+
+  75% {
+    background-color: white; }
+
+  85% {
+    background-color: black; } }
+@-moz-keyframes blink {
+  53% {
+    background-color: black; }
+
+  63% {
+    background-color: white; }
+
+  73% {
+    background-color: black; } }
+@-webkit-keyframes blink {
+  34% {
+    background-color: black; }
+
+  44% {
+    background-color: white; }
+
+  54% {
+    background-color: black; } }
+@-keyframes blink {
+  25% {
+    background-color: black; }
+
+  35% {
+    background-color: white; }
+
+  45% {
+    background-color: black; } }
+@-o-keyframes playerRed {
+  0% {
+    box-shadow: 3px 0px 25px red, 0px 3px 25px red, -3px 0px 25px red, 0px -3px 25px red; }
+
+  50% {
+    box-shadow: 3px 0px 15px red, 0px 3px 15px red, -3px 0px 15px red, 0px -3px 15px red; }
+
+  100% {
+    box-shadow: 3px 0px 25px red, 0px 3px 25px red, -3px 0px 25px red, 0px -3px 25px red; } }
+@-moz-keyframes playerRed {
+  0% {
+    box-shadow: 3px 0px 25px red, 0px 3px 25px red, -3px 0px 25px red, 0px -3px 25px red; }
+
+  50% {
+    box-shadow: 3px 0px 15px red, 0px 3px 15px red, -3px 0px 15px red, 0px -3px 15px red; }
+
+  100% {
+    box-shadow: 3px 0px 25px red, 0px 3px 25px red, -3px 0px 25px red, 0px -3px 25px red; } }
+@-webkit-keyframes playerRed {
+  0% {
+    box-shadow: 3px 0px 25px red, 0px 3px 25px red, -3px 0px 25px red, 0px -3px 25px red; }
+
+  50% {
+    box-shadow: 3px 0px 15px red, 0px 3px 15px red, -3px 0px 15px red, 0px -3px 15px red; }
+
+  100% {
+    box-shadow: 3px 0px 25px red, 0px 3px 25px red, -3px 0px 25px red, 0px -3px 25px red; } }
+@-keyframes playerRed {
+  0% {
+    box-shadow: 3px 0px 25px red, 0px 3px 25px red, -3px 0px 25px red, 0px -3px 25px red; }
+
+  50% {
+    box-shadow: 3px 0px 15px red, 0px 3px 15px red, -3px 0px 15px red, 0px -3px 15px red; }
+
+  100% {
+    box-shadow: 3px 0px 25px red, 0px 3px 25px red, -3px 0px 25px red, 0px -3px 25px red; } }
+@-o-keyframes playerBlue {
+  0% {
+    box-shadow: 3px 0px 25px blue, 0px 3px 25px blue, -3px 0px 25px blue, 0px -3px 25px blue; }
+
+  50% {
+    box-shadow: 3px 0px 15px blue, 0px 3px 15px blue, -3px 0px 15px blue, 0px -3px 15px blue; }
+
+  100% {
+    box-shadow: 3px 0px 25px blue, 0px 3px 25px blue, -3px 0px 25px blue, 0px -3px 25px blue; } }
+@-moz-keyframes playerBlue {
+  0% {
+    box-shadow: 3px 0px 25px blue, 0px 3px 25px blue, -3px 0px 25px blue, 0px -3px 25px blue; }
+
+  50% {
+    box-shadow: 3px 0px 15px blue, 0px 3px 15px blue, -3px 0px 15px blue, 0px -3px 15px blue; }
+
+  100% {
+    box-shadow: 3px 0px 25px blue, 0px 3px 25px blue, -3px 0px 25px blue, 0px -3px 25px blue; } }
+@-webkit-keyframes playerBlue {
+  0% {
+    box-shadow: 3px 0px 25px blue, 0px 3px 25px blue, -3px 0px 25px blue, 0px -3px 25px blue; }
+
+  50% {
+    box-shadow: 3px 0px 15px blue, 0px 3px 15px blue, -3px 0px 15px blue, 0px -3px 15px blue; }
+
+  100% {
+    box-shadow: 3px 0px 25px blue, 0px 3px 25px blue, -3px 0px 25px blue, 0px -3px 25px blue; } }
+@-keyframes playerBlue {
+  0% {
+    box-shadow: 3px 0px 25px blue, 0px 3px 25px blue, -3px 0px 25px blue, 0px -3px 25px blue; }
+
+  50% {
+    box-shadow: 3px 0px 15px blue, 0px 3px 15px blue, -3px 0px 15px blue, 0px -3px 15px blue; }
+
+  100% {
+    box-shadow: 3px 0px 25px blue, 0px 3px 25px blue, -3px 0px 25px blue, 0px -3px 25px blue; } }
+.scoreboard {
+  background: #3b2716;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(0, 0, 0, 0.1) 5px, rgba(0, 0, 0, 0.1) 10px);
+  color: white;
+  width: 400px;
+  float: right;
+  text-align: center;
+  font-size: 2em;
+  padding: 10px 0 0; }
+  .scoreboard > div {
+    clear: both;
+    padding: 10px;
+    height: 70px; }
+  .scoreboard h3 {
+    width: 183px;
+    margin: 0 41px;
+    float: left;
+    padding: 0; }
+  .scoreboard .score {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 30%;
+    float: left;
+    margin: 0;
+    padding: 0; }
+
+.homeActive .home h3 {
+  border-bottom: 2px solid white; }
+
+.awayActive .away h3 {
+  border-bottom: 2px solid white; }
+
+.inning {
+  color: gray; }
+  .inning h3 {
+    font-size: 0.8em;
+    text-align: right; }
+
+button {
+  font-family: "Playball", cursive; }
+
+.playball {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  position: absolute;
+  left: 10px;
+  top: 200px;
+  font-size: 2.4em;
+  padding: 10px 30px; }
+
+.buttonsRight {
+  position: absolute;
+  width: 250px;
+  bottom: 10px;
+  right: 30px; }
+  .buttonsRight button {
+    display: inline-block;
+    float: left;
+    width: 49%;
+    margin-right: 1%; }
+
+.buttonsLeft {
+  position: absolute;
+  width: 250px;
+  bottom: 10px;
+  left: 30px; }
+
+.endInning {
+  padding: 10px 30px; }
+
+.title {
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-clip: padding-box;
+  font-family: "Playball", cursive;
+  float: left;
+  width: 390px;
+  padding: 20px 0 0px 30px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: none;
+  text-shadow: 0 0 10px black;
+  margin-left: 10px; }
+  .title h1 {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-10), M12=-sin(-10), M21=sin(-10), M22=cos(-10));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-10), M12=-sin(-10), M21=sin(-10), M22=cos(-10))";
+    zoom: 1;
+    text-align: right;
+    text-align: center;
+    font-size: 1.5em; }
+    .title h1 .name {
+      display: block;
+      width: 100%;
+      text-align: left;
+      font-size: 1.6em; }
+      .title h1 .name span {
+        text-shadow: 0 0 25px white;
+        -o-animation: glow 5s infinite;
+        -moz-animation: glow 5s infinite;
+        -webkit-animation: glow 5s infinite;
+        animation: glow 5s infinite;
+        font-size: 1.6em; }
+  .title .edit {
+    width: 70px;
+    margin-top: 10px;
+    padding: 20px; }
+
+.field {
+  clear: both;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 90px; }
+  .field .outfield {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45), M12=-sin(45), M21=sin(45), M22=cos(45));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45), M12=-sin(45), M21=sin(45), M22=cos(45))";
+    zoom: 1;
+    background: #193319;
+    background-image: repeating-linear-gradient(0, transparent, transparent 20px, rgba(0, 0, 0, 0.1) 20px, rgba(0, 0, 0, 0.1) 40px);
+    box-shadow: 0px 0px 641px rgba(255, 255, 255, 0.2);
+    width: 400px;
+    height: 400px;
+    border: 2px solid #2a442a;
+    position: relative; }
+    .field .outfield .infield {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      -webkit-border-top-left-radius: 80%;
+      border-top-left-radius: 80%;
+      background-clip: padding-box;
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      width: 65%;
+      height: 65%;
+      border: 3px solid #b6a184;
+      background-color: #836e51; }
+      .field .outfield .infield .grass {
+        background: #193319;
+        background-image: repeating-linear-gradient(0, transparent, transparent 20px, rgba(0, 0, 0, 0.1) 20px, rgba(0, 0, 0, 0.1) 40px);
+        width: 55%;
+        height: 55%;
+        position: absolute;
+        bottom: 4px;
+        right: 4px;
+        border: 2px solid #2a442a; }
+        .field .outfield .infield .grass .base {
+          -webkit-border-radius: 4px;
+          border-radius: 4px;
+          background-clip: padding-box;
+          /* stops bg color from leaking outside the border: */
+          background: silver;
+          width: 15%;
+          height: 15%;
+          position: absolute; }
+          .field .outfield .infield .grass .base#home {
+            bottom: 0;
+            right: 0; }
+          .field .outfield .infield .grass .base#first {
+            bottom: 103%;
+            right: 0; }
+          .field .outfield .infield .grass .base#second {
+            bottom: 103%;
+            right: 103%; }
+          .field .outfield .infield .grass .base#third {
+            bottom: 0;
+            right: 103%; }
+
+.batter {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 85%;
+  left: 85%;
+  border: 4px solid red;
+  -o-animation: playerRed 1s infinite;
+  -moz-animation: playerRed 1s infinite;
+  -webkit-animation: playerRed 1s infinite;
+  animation: playerRed 1s infinite;
+  transition: all 1s ease; }
+  .batter#first {
+    top: -18%;
+    left: 85%; }
+  .batter#second {
+    top: -18%;
+    left: -18%; }
+  .batter#third {
+    top: 85%;
+    left: -18%; }
+  .batter#home {
+    top: 85%;
+    left: 85%; }
+
+.homeActive .batter {
+  border: 4px solid blue;
+  -o-animation: playerBlue 1s infinite;
+  -moz-animation: playerBlue 1s infinite;
+  -webkit-animation: playerBlue 1s infinite;
+  animation: playerBlue 1s infinite; }
+
+body {
+  background: #141219;
+  font-family: "Playball", cursive;
+  padding: 0;
+  margin: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+.clearfix {
+  clear: both; }
+
+button {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  font-family: "Playball", cursive;
+  font-size: 1.5em;
+  color: #646464;
+  text-shadow: 2px 2px darkgray;
+  font-weight: bold;
+  background: #c6c6dd; }
+  button:active {
+    margin-top: 2px; }
+  button:focus {
+    outline: none; }
+
+/*# sourceMappingURL=styles.css.map */

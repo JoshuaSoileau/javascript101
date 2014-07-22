@@ -1,0 +1,40 @@
+.title {
+  @include border-bottom-radius(10px);
+  font-family: "Playball", cursive;
+  float: left;
+  width: 390px;
+  padding: 20px 0 0px 30px;
+  color: white;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-top: none;
+  text-shadow: 0 0 10px black;
+  margin-left: 10px;
+
+  h1 {
+    @include rotate(-10);
+    text-align: right;
+    text-align: center;
+    font-size: 1.5em;
+    .name {
+      display: block;
+      width: 100%;
+      text-align: left;
+      font-size: 1.6em;
+
+      span {
+        text-shadow: 0 0 25px white;
+        @include animation(glow 5s infinite);
+        font-size: 1.6em;
+      }
+    }
+
+  }
+
+  .edit {
+    width: 70px;
+    margin-top: 10px;
+    padding: 20px;
+  }
+
+}

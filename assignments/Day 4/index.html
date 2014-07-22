@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    
+    <div class="title"><h1><span class="name"><span>Person</span>'s</span> Baseball Simulator</h1><div class="edit">edit</div></div>
+
+    <div class="scoreboard">
+      <div class="home"><h3>Home Team</h3><span class="score">0</span><div class="clearfix"></div></div>
+      <div class="away"><h3>Away Team</h3><span class="score">0</span><div class="clearfix"></div></div>
+      <div class="inning" style="display: none;"><h3>inning</h3><span class="score inning">0</span><div class="clearfix"></div></div>
+    </div>
+
+    <button class="button playball">Play Ball!</button>
+
+
+
+    <div class="field">
+      <div class="outfield">
+        <div class="infield">
+          <div class="grass">
+              <div id="home" class="base"></div>
+              <div id="first" class="base"></div>
+              <div id="second" class="base"></div>
+              <div id="third" class="base"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="buttonsLeft">
+      <button class="button swap">Swap Teams</button>
+    </div>
+
+    <div class="buttonsRight">
+      <button class="button single">Single</button>
+      <button class="button double">Double</button>
+      <button class="button triple">Triple</button>
+      <button class="button homerun">Home Run</button>
+    </div>
+
+
+
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+
+</html>

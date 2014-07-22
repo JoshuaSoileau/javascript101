@@ -1,0 +1,50 @@
+$text : rgb(100, 100, 100);
+$buttonBackground : rgb(198, 198, 221);
+$textBackground : darkgray;
+
+@import "mixins";
+@import "animations";
+@import "scoreboard";
+@import "buttons";
+@import "title";
+@import "field";
+@import "batter";
+
+body {
+  background: #141219; 
+  font-family: "Playball", cursive;
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+button {
+  @include border-radius(4px);
+  font-family: "Playball", cursive;
+  font-size: 1.5em;
+  color: $text;
+  text-shadow: 2px 2px  $textBackground;
+  font-weight: bold;
+  background: $buttonBackground;
+
+  &:active {
+    margin-top: 2px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
